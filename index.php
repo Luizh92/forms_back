@@ -18,7 +18,7 @@ Mysql::instagram();
 
 <body>
     <div class="form_cd">
-        <!-- <img src="/img/5552120.jpg" alt="Logo"> -->
+        <img src="/img/5552120.jpg" alt="Logo">
         <!-- <img src=« img/5552120.jpg » /> -->
         <h2>Cadastro de Usuário</h2>
         <form method="post">
