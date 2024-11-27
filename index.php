@@ -1,7 +1,7 @@
 <?php
 
 include('config.php');
-Mysql::instagram();
+Mysql::conectar();
 
 ?>
 
