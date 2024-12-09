@@ -18,6 +18,28 @@ Mysql::conectar();
 
 <body>
     <div class="form_cd">
+
+    <?php
+        if(isset($_POST['acao']) && $_POST['form'] == 'f_form'){
+            $nome = $_POST['nome'];
+            $email = $_POST['email'];
+            $senha = $_POST['senha'];
+
+            if($nome == ''){
+                Form::alert('erro','Preencha este campo!');
+            }else if($email == ''){
+                Form::alert('erro','Preencha este campo!');
+            }else if($senha == ''){
+                Form::alert('erro','Preencha este campo!');
+            }else{
+                Form::cadastrar($nome,$email,$senha);
+                Form::alert('erro','Usuário '.$nome. 'cadastrado');
+            }
+        }
+    
+    ?>
+
+
         <img src="/img/5552120.jpg" alt="Logo">
         <!-- <img src=« img/5552120.jpg » /> -->
         <h2>Cadastro de Usuário</h2>
