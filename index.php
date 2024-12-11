@@ -33,7 +33,7 @@ Mysql::conectar();
                 Form::alert('erro','Preencha este campo!');
             }else{
                 Form::cadastrar($nome,$email,$senha);
-                Form::alert('erro','Usuário '.$nome. 'cadastrado');
+                Form::alert('sucesso','Usuário '.$nome. 'cadastrado');
             
             // linha de teste
             }
