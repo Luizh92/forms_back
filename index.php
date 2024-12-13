@@ -26,11 +26,11 @@ Mysql::conectar();
             $senha = $_POST['senha'];
 
             if($nome == ''){
-                Form::alert('erro','Preencha este campo!');
+                Form::alert('erro','Preencha o campo Nome!');
             }else if($email == ''){
-                Form::alert('erro','Preencha este campo!');
+                Form::alert('erro','Preencha o campo E-mail!');
             }else if($senha == ''){
-                Form::alert('erro','Preencha este campo!');
+                Form::alert('erro','Preencha o campo Senha!');
             }else{
                 Form::cadastrar($nome,$email,$senha);
                 Form::alert('sucesso','Usuário '.$nome. 'cadastrado');
