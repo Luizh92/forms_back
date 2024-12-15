@@ -35,7 +35,6 @@ Mysql::conectar();
                 Form::cadastrar($nome,$email,$senha);
                 Form::alert('sucesso','Usuário '.$nome. 'cadastrado');
             
-            // linha de teste
             }
         }
     
